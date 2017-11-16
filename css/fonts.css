@@ -1,4 +1,16 @@
 @font-face {
+    font-family: 'fontello';
+    font-weight: normal;
+    font-style: normal;
+    src: url('font/fontello.eot?52772442');
+    src: url('font/fontello.eot?52772442#iefix') format('embedded-opentype'),
+         url('font/fontello.woff2?52772442') format('woff2'),
+         url('font/fontello.woff?52772442') format('woff'),
+         url('font/fontello.ttf?52772442') format('truetype'),
+         url('font/fontello.svg?52772442#fontello') format('svg');
+   
+  }
+@font-face {
     font-family: 'webcafeIcon';
     font-weight:400;
     src: url('font/webcafeIcon.eot');
