@@ -150,11 +150,15 @@ a:hover, a:focus {
 }
 .main-menu > li{
   float: left;
-  line-height: 45px;
+  position: relative;
+}
+.main-menu>li:focus {
+  outline: none;
 }
 .main-menu span{
   display: block;
   font-size: 1.6rem;
+  line-height: 45px;
   font-family: "Noto Sans Bold";
   color: #fff;  
   border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -162,14 +166,55 @@ a:hover, a:focus {
   cursor: pointer;
   text-shadow: 1px 0px 0px #000,1px 0px 0 #000,-1px 0px 0 #000, 0px -1px 0 #000;
 }
-.main-menu span:hover, main-menu > li:focus span{
+.main-menu span:hover::after, .main-menu>li:focus span::after{
+  content: "";
+  display: block;
+  border-top: 2px solid #000;
+}
+.main-menu span:hover, .main-menu > li:focus span{
   color:#ff0;
-  border
 }
 .sub-menu{
-  background: yellow;
-  position: absolute;
+  position: absolute; 
+  top: 47px;
+  white-space: nowrap;
   display: none;
+}
+.menu-act{
+  display: block !important;
+}
+.about-html{
+  left:0;
+}
+.about-css{
+  left:0;
+}
+.web-standard{
+  left:0;
+}
+.web-accessibility{
+  right:0;
+}
+.qna{
+  right:0;
+}
+.archive{
+  right:0;
+}
+.sub-menu li, .sub-menu a{
+  display: inline-block;
+}
+.sub-menu a{
+  padding: 4px 10px 4px 0;
+}
+.sub-menu a::before{
+  content: '\e803';
+  font-family: "fontello";
+  margin-right: 5px;
+  font-size: 0.7erm;
+}
+.sub-menu a:hover::before{
+  content: '\e801';
 }
 /* 비주얼 */
 .visual {
