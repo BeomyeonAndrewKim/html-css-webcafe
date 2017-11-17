@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* 모든 디바이스 */
+
+body {
+  background: yellow;
+}
+
+/* 태블릿 디바이스 이상 */
+
+@media screen and (min-width:768px) {
+  body {
+    background: pink;
+  }
+}
