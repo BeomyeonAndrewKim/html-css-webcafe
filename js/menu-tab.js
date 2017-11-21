@@ -16,7 +16,8 @@
 
 $(document).ready(function() {
   var menu = $('.main-menu>li');
-  // var box = $('.box');
+  var tab = $('.notice-heading, .pds-heading')
+    // var box = $('.box');
 
   menu.hover(function() {
     $(this).find('.sub-menu').toggleClass('menu-act')
@@ -28,4 +29,9 @@ $(document).ready(function() {
   // box.click(function() {
   //   $(this).toggleClass('box-act');
   // });
+  //탭메뉴
+  tab.on('click focusin', function() {
+    $(this).parent().addClass('board-act').siblings().removeClass('board-act');
+  });
+
 });
