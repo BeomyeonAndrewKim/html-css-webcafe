@@ -16,8 +16,10 @@
 
 $(document).ready(function() {
   var menu = $('.main-menu>li');
-  var tab = $('.notice-heading, .pds-heading')
-    // var box = $('.box');
+  var tab = $('.notice-heading, .pds-heading');
+  var list = $('.related-list');
+  var last = $('.related-list li:last-child a');
+  // var box = $('.box');
 
   menu.hover(function() {
     $(this).find('.sub-menu').toggleClass('menu-act')
@@ -33,5 +35,11 @@ $(document).ready(function() {
   tab.on('click focusin', function() {
     $(this).parent().addClass('board-act').siblings().removeClass('board-act');
   });
-
+  // 관련 사이트 //
+  list.focusin(function() {
+    $(this).addClass('list-open');
+  });
+  last.focusout(function() {
+    $(this).parents('.related-list').removeClass('list-open');
+  });
 });
