@@ -34,7 +34,7 @@
     }
     /* 링크 스타일 */
     
-    a:link, a:visited {
+    a {
       color: inherit;
       text-decoration: none;
     }
@@ -1093,10 +1093,76 @@
     /* 푸터 */
     
     .footer-bg {
-      background-color: purple;
-      height: 10vh;
+      background: #ccc linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 60%, #fff 70%, #fff 100%);
     }
     .footer {
-      background-color: skyblue;
-      padding: 20px 0;
+      padding: 15px 140px 15px 180px;
+      position: relative;
     }
+    .footer-logo {
+      position: absolute;
+      left: 35px;
+      top: 45px;
+    }
+    /* 푸터 로고 및 뱃지 */
+    
+    .tech-logo {
+      position: absolute;
+      right: 30px;
+      top: 15px;
+    }
+    /* 가이드 링크 */
+    
+    .guide {
+      background: #7b8385;
+      color: white;
+      border-radius: 20px;
+      display: flex;
+      padding: 2px 15px;
+      justify-content: space-around;
+    }
+    .guide a {
+      padding: 5px 10px;
+      display: block;
+      text-transform: uppercase;
+    }
+    /* 주소 및 저작권 */
+    
+    address {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    /* .footer {
+      background-color: skyblue;
+      padding: 20px 0 15px 34px;
+      display: flex;
+      flex-direction: row;
+    }
+    .footer-logo {
+      display: inline-block;
+    }
+    .footer-center {
+      width: 720px;
+    }
+    .guide {
+      border: 1px solid #aaa;
+      background: #aaa;
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .guide>li {
+      background: olive;
+    }
+    address {
+      background: paleturquoise;
+    }
+    .copyright {
+      background: yellowgreen;
+    }
+    .tech-logo {
+      background: navy;
+    } */
