@@ -18,7 +18,7 @@ $(document).ready(function() {
   var menu = $('.main-menu>li');
   var tab = $('.notice-heading, .pds-heading');
   var list = $('.related-list');
-  var last = $('.related-list li:last-child a');
+  var last = $('.related-list li:nth-child(5)');
   // var box = $('.box');
 
   menu.hover(function() {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture 요소</title>
+  <style>
+    .container {
+      width: 50%;
+      margin: 50px auto;
+    }
+    
+    .container source,
+    .container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <script>
+    document.createElemet('picture');
+  </script>
+  <script src="js/picturefill.js"></script>
+</head>
+
+<body>
+  <h1>Picture 요소의 활용</h1>
+  <div class="container">
+    <picture>
+      <source srcset="images/large.jpg" media="(min-width: 1250px)">
+      <source srcset="images/medium.jpg" media="(min-width: 481px)">
+      <source srcset="images/small.jpg" media="(min-width: 1px) and (max-width: 480px)">
+      <img srcset="images/normal.jpg" src="/images/normal.jpg" alt="Picture 예제">
+    </picture>
+  </div>
+
+</body>
+
+</html>

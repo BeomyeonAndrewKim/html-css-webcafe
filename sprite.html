@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sprite 이미지</title>
+  <style>
+    div {
+      background: yellow;
+      overflow: hidden;
+    }
+    
+    div span {
+      float: left;
+      box-sizing: border-box;
+      width: 20px;
+      height: 19px;
+      padding-top: 19px;
+      margin-right: 10px;
+      overflow: hidden;
+      background: url("/css/images/backpage_forwardpage.png") no-repeat;
+    }
+    
+    div span:nth-child(2) {
+      background-position: 100% 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>스프라이트 배경 이미지</h1>
+  <div>
+    <span>이전</span>
+    <span>다음</span>
+  </div>
+</body>
+
+</html>
